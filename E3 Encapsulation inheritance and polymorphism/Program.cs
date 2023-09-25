@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            //Inkompett
+            //Inkomplett
 
             //3.1 Inkapsling: Ej klar
             
