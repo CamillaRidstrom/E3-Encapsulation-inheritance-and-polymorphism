@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace E3_Encapsulation_inheritance_and_polymorphism
+{
+    // Sub-subclass using Interface
+    internal class Wolfman : Wolf, IPerson
+    {
+        //Properties?
+        //IPerson firstperson= new IPerson();
+        //firtperson
+
+        //Constructor
+        public Wolfman(string name, string color, int power, bool loneWolf)
+           : base(name, color, power, loneWolf)
+        {
+            Name = name;
+            Color = color;
+            Power = power;
+            LoneWolf = loneWolf;
+        }
+        //Method/s
+        public override void DoSound()
+        {
+            Console.WriteLine($"{Name} says Hellahooooo!");
+        }
+        void IPerson.Talk()
+        {
+            DoSound();
+        }
+        //void Talk()
+        //{
+        //    Console.WriteLine("Bla bla A");
+        //}
+    }
+}
