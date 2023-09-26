@@ -9,9 +9,6 @@ namespace E3_Encapsulation_inheritance_and_polymorphism
     // Sub-subclass using Interface
     internal class Wolfman : Wolf, IPerson
     {
-        //Properties?
-        //IPerson firstperson= new IPerson();
-        //firtperson
 
         //Constructor
         public Wolfman(string name, string color, int power, bool loneWolf)
@@ -31,9 +28,5 @@ namespace E3_Encapsulation_inheritance_and_polymorphism
         {
             DoSound();
         }
-        //void Talk()
-        //{
-        //    Console.WriteLine("Bla bla A");
-        //}
     }
 }
