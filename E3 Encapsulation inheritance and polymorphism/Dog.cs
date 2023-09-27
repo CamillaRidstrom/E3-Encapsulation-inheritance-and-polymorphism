@@ -23,7 +23,15 @@ namespace E3_Encapsulation_inheritance_and_polymorphism
         //Method/s
         public override void DoSound()
         {
-            Console.WriteLine($"{Name} says woof!");
+            Console.WriteLine($"{Name} says woof!\n");
+        }
+        public override string Stats()
+        {
+            return $"Name: {Name}, Color:{Color} Power: {Power}, NumberOfAverageBarks: {NumberOfAverageBarks}";
+        }
+        public string ToiletBreak()
+        {
+            return $"{Name} shows you that it's time for a walk!\n";
         }
     }
 }

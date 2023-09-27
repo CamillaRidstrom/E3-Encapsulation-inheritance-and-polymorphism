@@ -25,5 +25,9 @@ namespace E3_Encapsulation_inheritance_and_polymorphism
         {
             Console.WriteLine($"{Name} says neigh!");
         }
+        public override string Stats()
+        {
+            return $"Name: {Name}, Color:{Color} Power: {Power}, HorsePower: {HorsePower}";
+        }
     }
 }

@@ -28,7 +28,11 @@ namespace E3_Encapsulation_inheritance_and_polymorphism
         //Method/s
         public override void DoSound()
         {
-            Console.WriteLine($"{Name} says tweeeeet!");
+            Console.WriteLine($"{Name} says tweeeeet!\n");
+        }
+        public override string Stats()
+        {
+            return $"Name: {Name}, Color:{Color} Power: {Power}, WingSpan: {WingSpan}, NumberOfFishInBeak: {NumberOfFishInBeak}";
         }
     }
 }

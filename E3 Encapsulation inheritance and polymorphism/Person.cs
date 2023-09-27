@@ -73,7 +73,6 @@ namespace E3_Encapsulation_inheritance_and_polymorphism
                 }
                 else
                 {
-                    return " "; 
                     throw new ArgumentException("Error:The LName must be beteween 3 and 15 characters.");
                 }
             }

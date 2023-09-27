@@ -21,6 +21,6 @@ namespace E3_Encapsulation_inheritance_and_polymorphism
         //Method/s
         public abstract void DoSound();
 
-        //public abstract string Stats();
+        public abstract string Stats();
     }
 }

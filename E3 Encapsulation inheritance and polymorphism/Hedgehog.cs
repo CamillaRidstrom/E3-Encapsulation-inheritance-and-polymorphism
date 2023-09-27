@@ -26,5 +26,9 @@ namespace E3_Encapsulation_inheritance_and_polymorphism
         {
             Console.WriteLine($"{Name} says squeal!");
         }
+        public override string Stats()
+        {
+            return $"Name: {Name}, Color:{Color} Power: {Power}, NrOfSpikes: {NrOfSpikes}";
+        }
     }
 }

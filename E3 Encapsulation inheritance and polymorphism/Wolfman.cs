@@ -22,11 +22,15 @@ namespace E3_Encapsulation_inheritance_and_polymorphism
         //Method/s
         public override void DoSound()
         {
-            Console.WriteLine($"{Name} says Hellahooooo!");
+            Console.WriteLine($"{Name} says Hellahooooo! \n");
         }
         void IPerson.Talk()
         {
-            DoSound();
+            Console.WriteLine($"{Name} says Hellahooooo ahooooo! \n");
+        }
+        public override string Stats()
+        {
+            return $"Name: {Name}, Color:{Color} Power: {Power}, LoneWolf: {LoneWolf}";
         }
     }
 }
